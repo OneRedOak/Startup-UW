@@ -1,0 +1,447 @@
+.hide{
+	display: none;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#redux-container{
+	background: #fff;
+	margin-bottom: 40px;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	position: relative;
+	color: #3b3f4d;
+	overflow: hidden;
+	min-height: 800px;
+	box-sizing: border-box;
+}
+
+#redux-container .hide{
+	display: none;
+}
+
+#redux-container .button{
+	background: #1abc9c;
+	border: none;
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff;
+	padding: 8px 20px;
+	height: auto;
+	text-shadow:none;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	border-radius: 2px;
+}
+
+#redux-container .button:hover{
+	opacity: 0.8;
+}
+
+#redux-container .button.remove-image,
+#redux-container .redux-action_bar .button:last-child{
+	background: #e74c3c;
+}
+
+
+#redux-header,
+#redux-footer{
+	background: #3193c6 !important;
+	height: 60px;
+	position: relative !important;
+	z-index: 9 !important;
+	width: 100% !important;
+}
+
+#redux-footer{
+	display: none;
+}
+
+#redux-header .logo span,
+#redux-intro-text,
+#icon-themes,
+#expand_options{
+	display: none;
+}
+
+#redux-header h2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 220px;
+	background: #1abc9c;
+	box-shadow: 5px 0 0 0 rgba(24,24,20,.08);
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 24px;
+	line-height: 60px;
+	margin: 0;
+	padding: 0 0 0 25px;
+	text-shadow: none;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+#redux-header span{
+	background: none;
+}
+
+
+#redux-sticky{
+	position: relative;
+	width: 100%;
+}
+
+#redux-sticky #info_bar{
+	position: absolute;
+	right: 20px;
+	top: -48px;
+	z-index: 11;
+}
+
+#redux-sticky #info_bar .button{
+	margin-left: 10px;
+}
+
+#redux-sticky #redux-save,
+#redux-sticky #redux-save-warn,
+#redux-sticky #redux-field-errors,
+#redux-sticky #redux-field-warnings{
+	padding: 20px;
+	color: #fff;
+	text-indent: 240px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#redux-sticky #redux-save-warn,
+#redux-sticky #redux-field-errors,
+#redux-sticky #redux-field-warnings{
+	display: none;
+}
+
+#redux-save,
+#redux-save-warn{
+	background: #f39c12;
+}
+
+#redux-sticky #redux-field-errors,
+#redux-sticky #redux-field-warnings{
+	background: #c0392b;
+}
+
+
+
+#redux-sidebar{
+	width: 10%;
+	display: inline-block;
+	vertical-align: top;
+	min-width: 220px;
+	background: #2b303e;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	height: 100%;
+	z-index: 5;
+	box-shadow: 5px 0 0 0 rgba(24,24,20,.08);
+	box-sizing: border-box;
+}
+
+#redux-sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#redux-sidebar ul li{
+	margin: 0;
+	padding: 0;
+}
+
+#redux-sidebar ul li.divide{
+	display: none;
+}
+
+#redux-sidebar ul li a{
+	color: #9b9c9e;
+	text-decoration: none;
+	padding: 20px 20px 20px 60px;
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	position: relative;
+	transition: all 0.2s;
+}
+
+#redux-sidebar ul li a:hover,
+#redux-sidebar ul li.active a{
+	background: #3b3f4d;
+	color: #fff;
+}
+
+#redux-sidebar ul li a i{
+	width: 18px;
+	height: 18px;
+	background: center;
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	margin-top: -9px;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+#redux-sidebar ul li a:hover i,
+#redux-sidebar ul li.active a i{
+	opacity: 1;
+}
+
+#redux-sidebar ul li a i.icon-general{
+	background-image: url('../img/icon/general.png');
+}
+
+#redux-sidebar ul li a i.icon-font-colors{
+	background-image: url('../img/icon/font.png');
+}
+
+#redux-sidebar ul li a i.icon-import{
+	background-image: url('../img/icon/import.png');
+}
+
+#redux-sidebar ul li a i.icon-info{
+	background-image: url('../img/icon/info.png');
+}
+
+#redux-sidebar ul li a i.icon-footer{
+	background-image: url('../img/icon/footer.png');
+}
+
+#redux-sidebar ul li a i.icon-blog{
+	background-image: url('../img/icon/blog.png');
+}
+
+#redux-sidebar ul li a i.icon-portfolio{
+	background-image: url('../img/icon/portfolio.png');
+}
+
+#redux-main{
+	background: #fff;
+	width: 100%;
+	padding: 1%;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 0 220px;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+.redux-group-tab{
+	display: none;
+	padding: 30px 35px;
+	margin: 0;
+}
+
+.redux-group-tab h3{
+	margin: 0 0 25px 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.redux-section-desc{
+	color: #b9babf;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 4px solid #f9f9f9;
+}
+
+.redux-section-desc strong{
+	font-weight: 400;
+}
+
+#redux-container .form-table tr{
+	border-bottom: 1px solid #eee;
+	width: 100%;
+	padding: 25px 0;
+	display: inline-block;
+}
+
+#redux-container .form-table tr:last-child{
+	border-bottom: none;
+}
+
+#redux-container .form-table tr th{
+	width: 30%;
+	font-size: 18px;
+	font-weight: 400;
+	color: #3b3f4d;
+	display: inline-block;
+}
+
+#redux-container .form-table tr th span{
+	display: block;
+	color: #b9babf;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: normal;
+	margin-top: 10px;
+	padding: 0;
+}
+
+#redux-container .form-table tr th .showDefaults{
+	display: none;
+}
+
+#redux-container .form-table tr td{
+	width: 65%;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#redux-container .form-table tr td input,
+#redux-container .form-table tr td select,
+#redux-container .form-table tr td textarea,
+#redux-container .form-table tr td label,
+#redux-container .form-table tr td a.wp-color-result,
+#redux-container .form-table tr td .select2-chosen{
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 12px;
+}
+
+#redux-container .form-table tr td .regular-text,
+#redux-container .form-table tr td .large-text{
+	width: 80%;
+	padding: 10px;
+	border:1px solid #ddd;
+	border-radius: 0;
+}
+
+#redux-container .cb-enable{
+	padding: 0;
+	margin: 0;
+	border:none;
+	background: #09c;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+
+#redux-container .cb-enable span{
+	margin: 0;
+	padding: 0 10px;
+	background: #fff;
+	color: #000;
+	text-transform: uppercase;
+}
+
+#redux-container .cb-enable.selected span{
+	background: #1abc9c;
+	color: #fff;
+}
+
+#redux-container .cb-disable{
+	padding: 0;
+	margin: 0;
+	border:none;
+	background: #09c;
+	border-top:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+
+#redux-container .cb-disable span{
+	margin: 0;
+	padding: 0 10px;
+	background: #fff;
+	color: #000;
+	text-transform: uppercase;
+}
+
+#redux-container .cb-disable.selected span{
+	background: #1abc9c;
+	color: #fff;
+}
+
+#redux-container .redux-container-typography label{
+	margin: 10px 0 5px 0;
+	display: inline-block;
+}
+
+#redux-main .redux-typography-container .typography-preview{
+	width: 85% !important;
+	max-width: 500px !important;
+}
+
+#redux-container .hr{height:20px;line-height:20px;float:none;border-color:#e7e7e7;display:block;width:100%;height:35px !important;line-height:35px !important;position:relative;margin:15px 0 10px 0;float:left}
+#redux-container .inner{width:42% !important;left:40% !important;margin-left:-6%;background-color:#fcfcfc;border-color:#e7e7e7;position:absolute;height:1px;top:50%;width:100%;margin-top:-1px;border-top-width:1px;border-top-style:solid}
+#redux-container .hr .inner span{background-color:#fcfcfc;border-color:#e7e7e7;border-radius:20px;height:5px;width:5px;border-width:2px;border-style:solid;display:block;position:absolute;left:50%;margin-left:-5px;margin-top:-5px}
+.shadow1{position:relative}
+.shadow1:before,.shadow1:after{z-index:-1;position:absolute;content:"";bottom:15px;left:10px;width:50%;top:80%;max-width:300px;background:#777;-webkit-box-shadow:0 15px 10px rgba(0,0,0,0.4);-moz-box-shadow:0 15px 10px rgba(0,0,0,0.4);box-shadow:0 15px 10px rgba(0,0,0,0.4);-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-o-transform:rotate(-3deg);-ms-transform:rotate(-3deg);transform:rotate(-3deg)}
+.shadow1:after{-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-o-transform:rotate(3deg);-ms-transform:rotate(3deg);
+	transform:rotate(3deg);right:10px;left:auto}
+
+.redux-menu-warning{background-color:#c09853;color:#fcf8e3;display:inline-block;float:right;padding:6px 7px 4px 7px;margin-left:4px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;font-family:sans-serif;font-size:9px;font-weight:bold;line-height:9px}
+.redux-menu-error{background-color:#b94a48;color:#f2dede;display:inline-block;float:right;padding:6px 7px 4px 7px;margin-left:4px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;font-family:sans-serif;font-size:9px;font-weight:bold;line-height:9px}
+
+
+.redux-group-tab .form-table tr td .redux-th-warning{font-size:1em;color:#c09853;font-weight:normal;display:block}
+.redux-group-tab .form-table tr td .redux-field-warning{border-color:#c09853}
+.redux-group-tab .form-table tr td .redux-th-error{font-size:1em;color:#b94a48;font-weight:normal;display:block}
+#redux-main .redux-group-tab .form-table tr td input.redux-field-error{border-color:#b94a48}
+.redux-group-tab .form-table tr td table.mceLayout,.redux-group-tab .form-table tr td table.mceLayout tr,.redux-group-tab .form-table tr td table.mceLayout tr td{padding:0;border-width:0}
+.redux-group-tab .redux-theme-data{padding:20px 0;border-top:1px solid #e7e7e7}
+.redux-group-tab .redux-theme-data.theme-uri,.redux-group-tab .redux-theme-data.theme-author,.redux-group-tab .redux-theme-data.theme-version{padding:0;border-width:0}
+.redux-group-tab .redux-theme-data.theme-description{padding:10px 0;border-width:0}
+.farb-popup-wrapper{position:relative;display:block}
+.farb-popup{position:absolute;left:40px;top:40px;background-color:#fff;border:1px solid #222;padding:5px;z-index:100}
+#redux-import-link-wrapper,#redux-import-code-wrapper{display:none}
+#redux-export-code,#redux-export-link-value{display:none}
+#redux-import-action span{color:#b94a48}
+.redux-screenshot{max-width:300px;display:block}
+#ui-datepicker-div{display:none}
+
+.tipsy{font-size:10px;position:absolute;padding:5px;z-index:100000}
+.tipsy-inner{background-color:#000;color:#fff;max-width:200px;padding:5px 5px 1px 5px;text-align:center}
+.tipsy-inner{border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}
+.tipsy-arrow{position:absolute;width:0;height:0;line-height:0;border:5px dashed #000}
+.tipsy-arrow-n{border-bottom-color:#000}
+.tipsy-arrow-s{border-top-color:#000}
+.tipsy-arrow-e{border-left-color:#000}
+.tipsy-arrow-w{border-right-color:#000}
+.tipsy-n .tipsy-arrow{top:0;left:50%;margin-left:-5px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-nw .tipsy-arrow{top:0;left:10px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-ne .tipsy-arrow{top:0;right:10px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-s .tipsy-arrow{bottom:0;left:50%;margin-left:-5px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-sw .tipsy-arrow{bottom:0;left:10px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-se .tipsy-arrow{bottom:0;right:10px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent}
+.tipsy-e .tipsy-arrow{right:0;top:50%;margin-top:-5px;border-left-style:solid;border-right:none;border-top-color:transparent;border-bottom-color:transparent}
+.tipsy-w .tipsy-arrow{left:0;top:50%;margin-top:-5px;border-right-style:solid;border-left:none;border-top-color:transparent;border-bottom-color:transparent}
+.input-append{margin-right:10px}
+#redux-main .input-append input{border-right:0;margin-bottom:0}
+#redux-main .input-prepend input{border-left:0;margin-bottom:0}
+.input-append .add-on,.input-prepend .add-on{width:auto;display:inline-block;min-width:16px;padding:3px 4px;font-size:12px;font-weight:normal;line-height:20px;text-align:center;text-shadow:0 1px 0 #fff;background-color:#eee;border:1px solid #ccc}
+.input-prepend .add-on{b2order-right:1px}
+.input-append,.input-prepend{font-size:0;white-space:nowrap;float:left;display:inline-block;margin-bottom:5px}
+#redux-main .input-append input{border-top-right-radius:0;border-bottom-right-radius:0;margin-right:0}
+#redux-main .input-append .add-on{border-top-right-radius:3px;border-bottom-right-radius:3px}
+#redux-main .input-prepend input{border-top-left-radius:0;border-bottom-left-radius:0;margin-left:0}
+#redux-main .input-prepend .add-on{border-top-left-radius:3px;border-bottom-left-radius:3px}
+#redux-main td{padding:8px 0}
+#redux-main .mini,#redux-main input[type=text].mini{width:50px;text-align:center}
+#redux-main .upload{width:80%}
+.wrap{margin-top:0}
+img{max-width:100%;max-height:100%}
+.showDefaults{display:block;font-weight:normal;font-size:.8em;color:#888}
+.select2-default{width:auto !important}
+@media screen and (max-width:1124px){#redux-sidebar{width:42px} #redux-main{margin-left:43px;width:auto;max-width:100%} .redux-group-tab-link-a{position:relative} .redux-group-tab-link-a i{position:inherit} .redux-group-tab-link-a span{display:none;position:absolute;top:0;left:44px;padding:12px;width:200px;background:#eee;border:1px solid #ccc;-webkit-box-shadow:2px 2px 8px rgba(0,0,0,0.2);-moz-box-shadow:2px 2px 8px rgba(0,0,0,0.2);box-shadow:2px 2px 8px rgba(0,0,0,0.2);border-width:1px 1px 1px 0;z-index:1} .redux-group-tab-link-a:hover>span{display:block} #redux-sidebar #redux-group-menu li a,#redux-sidebar #redux-group-menu li a:hover,#redux-sidebar #redux-group-menu li.active a,#redux-sidebar #redux-group-menu li.active a:hover{width:auto} table.form-table,.form-table>thead,.form-table>tbody,.form-table>tbody>tr>th,.form-table>tbody>tr>td,.form-table>tbody>tr{display:block !important;width:100% !important;padding:0 !important} .form-table>tbody>tr>th,.form-table>tbody>tr>td{padding:10px !important} .form-table>tbody>tr>th,.form-table>tbody>tr>td{padding:10px !important} .form-table>tbody>tr>th{min-width:35%}}@media screen and (max-width:783px){.mp6 #redux-container #info_bar{height:auto;padding-bottom:1px} .mp6 #redux-container #info_bar a{margin-top:5px}}.mp6 .icon-themes{display:none}
+#redux-object-browser{overflow:auto;word-wrap:break-word;max-height:600px;max-width:100%}
+#redux-main span.description{font-style:normal}
+#redux-main #redux-system-info textarea{min-height:730px}
+#redux-main .field-desc{clear:both}
