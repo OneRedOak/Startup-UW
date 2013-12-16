@@ -1,0 +1,140 @@
+body{
+	color: #333;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	line-height: 1.8em;
+}
+
+#sidebar{
+	width: 20%;
+	background: #2c3e50;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	min-width: 260px;
+}
+
+#sidebar #logo{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+	padding: 40px 0;
+}
+
+#sidebar #logo img{
+	margin-bottom: 20px;
+	width: 180px;
+}
+
+#sidebar #logo h4{
+	font-weight: 100;
+	letter-spacing: 1px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 10%;
+	font-size: 12px;
+}
+
+#sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #34495e;
+}
+
+#sidebar ul li{
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #34495e;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+#sidebar ul li a:after{
+	content:"\e080";
+	position: absolute;
+	right: 20px;
+	font-family: 'Glyphicons Halflings';
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active,
+#sidebar ul li.active a{
+	background: #34495e;
+}
+
+#sidebar .me{
+	padding: 10px;
+	margin-top: 40px;
+	font-size: 11px;
+	text-align: center;
+}
+
+#sidebar .me img{
+	width: 60%;
+}
+
+#content{
+	width: 80%;
+	float: right;
+	background: #fff;
+	padding: 20px 40px;
+}
+
+h2{
+	padding-bottom: 20px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 12px 20px;
+	background: #34495e;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.btn:hover{
+	color: #fff;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+.sep{
+	margin: 40px 0;
+	height: 1px;
+	width: 100%;
+	display: block;
+	background: #ddd;
+}
+
+ul,
+ol{
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+ul li,
+ol li{
+	margin: 0 0 0 20px;
+	padding: 5px 0;
+}
+
+.panel{
+	display: none;
+}
+
+code{
+	text-align: center;
+	margin: 10px 0 30px;
+}
